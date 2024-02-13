@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/home.css'%}">
+{% endblock %}
+
+{% block title %} Anasayfa {% endblock%}
+
+{% block body %}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-item-content" style="background: url('../static/img/arc1.jpg') no-repeat center center fixed;">
+            <div class="text-wrapper row text-center">        
+                <h1 class="carousel-item-title col-12 animbase anim03">"Estetik Mimarlık Çözümleri"</h1>
+                <h2 class="carousel-item-subtitle col-12 mt-3 animbase anim05">
+                    Modern ve klasik mimari tarzlarıyla uyumlu tasarımlarımızla, estetik anlayışınızı ön plana çıkarın. Mekânlarınıza özgü, göz alıcı mimari çözümlerimizle yaşam alanlarınızı güzelleştirin.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-content" style="background: url('../static/img/arc2.jpg') no-repeat center center fixed;">
+            <div class="text-wrapper row text-center">        
+                <h1 class="carousel-item-title col-12 animbase anim03">"Fonksiyonel Yaşam Alanları"</h1>
+                <h2 class="carousel-item-subtitle col-12 mt-3 animbase anim05">
+                    İhtiyaçlarınızı karşılayan ve yaşam kalitenizi artıran fonksiyonel mimari çözümlerimizle tanışın. Her detayın düşünüldüğü, kullanıcı dostu tasarımlarımızla yaşam alanlarınızı daha işlevsel hale getirin.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carousel-item-content" style="background: url('../static/img/arc3.jpg') no-repeat center center fixed;">
+            <div class="text-wrapper row text-center">        
+                <h1 class="carousel-item-title col-12 animbase anim03">"Sürdürülebilir Mimarlık İnovasyonları"</h1>
+                <h2 class="carousel-item-subtitle col-12 mt-3 animbase anim05">
+                    Çevre dostu ve enerji verimli tasarımlarımızla geleceğe yönelik sürdürülebilir mimari çözümleri keşfedin. Doğaya saygılı projelerimizle modern yaşamı sürdürülebilir bir geleceğe taşıyın.
+                </h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="mt-3" id="us">
+    <div class="section-head row mx-auto">
+        <div class="section-title-wrapper col-12 text-center animbaseoff anim03">
+            <h1 class="section-title">PAFA MİMARLIK</h1>
+        </div>
+        <div class="section-line-wrapper col-12 text-center animbaseoff anim03">
+            <img class="w-50 mx-auto" src="{% static 'img/sectionunderline.png'%}" alt="">
+        </div>
+        <div class="section-item col-lg-4 text-start ">
+            <h1 class="section-item-title animbaseoff anim03">
+                Biz Kimiz?
+            </h1>
+            <p class="section-item-text animbaseoff anim03" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+            </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/team.png'%}" alt="">
+            </div>
+        </div>
+        <div class="section-item col-lg-4 text-start ">
+            <h1 class="section-item-title animbaseoff anim03">
+                Projelerimiz
+            </h1>
+            <p class="section-item-text animbaseoff anim03">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+            </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/arcp2.jpg'%}" alt="">
+            </div>
+    </div>
+    <div class="section-item col-lg-4 text-start">
+        <h1 class="section-item-title animbaseoff anim03">
+            Misyonumuz
+        </h1>
+        <p class="section-item-text animbaseoff anim03">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+        </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/idea.png'%}" alt="">
+            </div>
+        </div>
+    <div class="section-btn-wrapper col-12 text-center animbaseoff anim05">
+        <button class="section-btn">Devam...</button>
+    </div>
+    </div>
+  </section>
+
+  <hr>
+  <section id="icn">
+    <div class="icn-section mx-auto">
+        <div class="section-item row text-center">
+            <div class="section-icn-wrapper col-12 text-center animbaseoff anim03">
+                <img class="section-icn w-50" src="{% static 'img/architect.png' %}" alt="">
+            </div>
+            <div class="section-text-wrapper col-12 text-center animbaseoff anim05">
+                <p class="section-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus officiis quia accusantium molestias aspernatur ex aliquid pariatur natus error quod.
+                </p>
+            </div>
+        </div>
+        <div class="section-item row text-center">
+            <div class="section-icn-wrapper text-center col-12 animbaseoff anim03">
+                <img class="section-icn w-50" src="{% static 'img/design.png' %}" alt="">
+            </div>
+            <div class="section-text-wrapper col-12 text-center animbaseoff anim05">
+                <p class="section-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus officiis quia accusantium molestias aspernatur ex aliquid pariatur natus error quod.
+                </p>
+            </div>
+        </div>
+        <div class="section-item row text-center">
+            <div class="section-icn-wrapper text-center col-12 animbaseoff anim03">
+                <img class="section-icn w-50" src="{% static 'img/model.png' %}" alt="">
+            </div>
+            <div class="section-text-wrapper col-12 text-center animbaseoff anim05">
+                <p class="section-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus officiis quia accusantium molestias aspernatur ex aliquid pariatur natus error quod.
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="mt-3" id="team">
+    <div class="section-head row mx-auto">
+        <div class="section-title-wrapper col-12 text-center animbaseoff anim03">
+            <h1 class="section-title">EKİBİMİZ</h1>
+        </div>
+        <div class="section-line-wrapper col-12 text-center animbaseoff anim03">
+            <img class="w-50 mx-auto" src="{% static 'img/sectionunderline.png'%}" alt="">
+        </div>
+        <div class="section-item col-lg-4 text-start">
+            <h1 class="section-item-title animbaseoff anim03">
+                Emre Şahin
+            </h1>
+            <p class="section-item-text animbaseoff anim03">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+            </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/person1.jpg'%}" alt="">
+            </div>
+        </div>
+        <div class="section-item col-lg-4 text-start">
+            <h1 class="section-item-title animbaseoff anim03">
+                Murat Yıldırım
+            </h1>
+            <p class="section-item-text animbaseoff anim03">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+            </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/person2.jpg'%}" alt="">
+            </div>
+    </div>
+    <div class="section-item col-lg-4 text-start">
+        <h1 class="section-item-title animbaseoff anim03">
+            Fatma Şahin
+        </h1>
+        <p class="section-item-text animbaseoff anim03">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iste molestias ad praesentium recusandae eveniet, corporis ullam consequuntur doloremque optio.
+        </p>
+            <div class="section-img-wrapper w-100 animbaseoff anim05">
+            <img class="section-item-img w-100" src="{% static 'img/person3.jpg'%}" alt="">
+            </div>
+        </div>
+    <div class="section-btn-wrapper col-12 text-center mb-2 animbaseoff anim05">
+        <button class="section-btn">Devam...</button>
+    </div>
+    </div>
+  </section>
+  <hr>
+  <section class="mt-3" id="galery">
+    <div class="section-head row mx-auto">
+        <div class="section-title-wrapper col-12 text-center">
+            <h1 class="section-title">GALERİ</h1>
+        </div>
+        
+        <div class="section-item col-lg-3 text-center animbaseoff anim03">
+   
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp1.jpg'%}" alt="">
+            </div>
+            
+        </div>
+        <div class="section-item col-lg-3 text-center animbaseoff anim03">
+            
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp3.jpg'%}" alt="">
+            </div>
+            
+    </div>
+    <div class="section-item col-lg-3 text-center animbaseoff anim03">
+        
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp5.jpg'%}" alt="">
+            </div>
+        
+        </div>
+    <div class="section-item col-lg-3 text-center animbaseoff anim03">
+
+        <div class="section-img-wrapper w-100">
+        <img class="section-item-img w-100" src="{% static 'img/arcp2.jpg'%}" alt="">
+        </div>
+        
+    </div>
+    <div class="section-item col-lg-3 text-center mt-3 animbaseoff anim05">
+        
+        <div class="section-img-wrapper w-100">
+        <img class="section-item-img w-100" src="{% static 'img/arcp4.jpg'%}" alt="">
+        </div>
+        
+    </div>
+    <div class="section-item col-lg-3 text-center mt-3 animbaseoff anim05">
+        
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp6.jpg'%}" alt="">
+            </div>
+        
+        </div>
+        <div class="section-item col-lg-3 text-center mt-3 animbaseoff anim05">
+   
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp1.jpg'%}" alt="">
+            </div>
+            
+        </div>
+        <div class="section-item col-lg-3 text-center mt-3 animbaseoff anim05">
+            
+            <div class="section-img-wrapper w-100">
+            <img class="section-item-img w-100" src="{% static 'img/arcp3.jpg'%}" alt="">
+            </div>
+            
+    </div>
+    <div class="section-btn-wrapper col-12 text-center mb-2 animbaseoff anim05">
+        <button class="section-btn ">Devam...</button>
+    </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contactus">
+    <div class="section-head row mx-auto text-center">
+        <div class="section-title-wrapper col-12 text-center animbaseoff anim03">
+            <h1 class="section-title">BİZE ULAŞIN</h1>
+        </div>
+        <form class="text-center" action="./" method="post">
+            <div class="form-wrapper row w-100">
+            <div class="form-left col-lg-4 row px-3 text-center animbaseoff anim03">
+                <input class="col-12" type="text" id="name" placeholder="Adınız">
+                <input class="col-12" type="text" id="surname" placeholder="Soyadınız">
+                <input class="col-12" type="text" id="e-mail" placeholder="E-mail adresiniz">
+                <input class="col-12" type="text" id="text" placeholder="Telefon numaranız">
+            </div>
+            <div class="form-right col-lg-8 px-3 text-center row animbaseoff anim05">
+                <textarea class="col-12" type="text" id="name" placeholder="Mesajınız"></textarea>
+                
+            </div>
+            <div class="form-btn-wrapper animbaseoff anim05">
+                <button type="submit" class="form-btn">Gönder</button>
+            </div>
+        </div>
+        </form>
+    </div>
+  </section>
+
+
+
+{% endblock %}
